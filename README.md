@@ -1,6 +1,6 @@
 # gittag
 
-Parses Git tags as output by `[git describe](http://www.kernel.org/pub/software/scm/git/docs/git-describe.html)`.
+Parses Git tags as output by [`git describe`](http://www.kernel.org/pub/software/scm/git/docs/git-describe.html).
 
 ## Installation
 
