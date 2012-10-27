@@ -1,5 +1,30 @@
 # gittag
 
+Parses Git tags as output by `[git describe](http://www.kernel.org/pub/software/scm/git/docs/git-describe.html)`.
+
+## Installation
+
+    $ npm install gittag
+
+## Usage
+
+The module is intended to be used in automated build and deployment processes,
+where version numbers are derived from Git tags.
+
+Initialize a new tag:
+
+    var tag = new Tag('v0.9.0-287-gbd66530');
+
+Use components parsed from tag:
+
+    console.log(tag.tag)   // => v0.9.0
+    console.log(tag.onTop) // => 287
+    console.log(tag.hash)  // => bd66530
+
+Convert to a [semantic](http://semver.org/) version number:
+
+    console.log(tag.toVersion())  // => 0.9.0+287
+
 ## Tests
 
     $ npm install --dev
