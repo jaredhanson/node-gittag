@@ -1,5 +1,12 @@
 # gittag
 
+## Tests
+
+    $ npm install --dev
+    $ make test
+
+[![Build Status](https://secure.travis-ci.org/jaredhanson/node-gittag.png)](http://travis-ci.org/jaredhanson/node-gittag)
+
 ## Credits
 
   - [Jared Hanson](http://github.com/jaredhanson)
