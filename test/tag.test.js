@@ -17,6 +17,9 @@ describe('tag in short format', function() {
   it('should convert to version', function() {
     tag.toVersion().should.be.equal('0.9.0')
   })
+  it('should convert to version without hash', function() {
+    tag.toVersion({ appendHash: true }).should.be.equal('0.9.0')
+  })
 })
 
 describe('tag in long format', function() {
