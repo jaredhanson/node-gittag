@@ -34,6 +34,9 @@ describe('tag in long format', function() {
   it('should convert to version', function() {
     tag.toVersion().should.be.equal('0.9.0+287')
   })
+  it('should convert to version with hash appended', function() {
+    tag.toVersion({ appendHash: true }).should.be.equal('0.9.0+287.bd66530')
+  })
 })
 
 describe('tag in forced long format', function() {
@@ -50,6 +53,9 @@ describe('tag in forced long format', function() {
   })
   it('should convert to version', function() {
     tag.toVersion().should.be.equal('0.1.1')
+  })
+  it('should convert to version with hash appended', function() {
+    tag.toVersion({ appendHash: true }).should.be.equal('0.1.1+0.4ad9452')
   })
 })
 
